@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>XI Account details</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Accordion ui -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<a href="#" data-toggle="modal" data-target="#login-modal">Click here to Login in to your Xively account </a>
+
+<!-- START OF LOGIN SCREEN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+	<div class="modal-dialog">
+		<div class="loginmodal-container">
+			<h1>Login to Your Xively Account</h1>
+			<br>
+			<form>
+				<input id="email" type="text" name="email" placeholder="Email address">
+				<input id="password" type="password" name="password" placeholder="Password"> 
+				<input id="accountId" type="text" name="accountId" placeholder="Your Xively Account ID">
+				<!-- <input type="submit" name="login" class="login loginmodal-submit" value="Login"> -->
+				<input id="login" type="submit" name="login" class="login loginmodal-submit" value="Login">
+			</form>
+
+			<div class="login-help">
+				<a href="https://app.xively.com/login">Register</a> - <a href="https://app.xively.com/forgotpassword">Forgot Password</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END OF LOGIN IN SCREEN -->
+
+<!-- START OF XIVELY SCREEN -->
+
+<!-- Modal -->
+<div class="modal fade" id="device_templates" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Device Information</h4>
+      </div>
+      <div class="modal-body">
+      <!--  List of device templates -->
+	 	<div class="form-group">
+	      <!-- <label for="sel1">Select list (select one):</label> -->
+	      <select id="selectdevicetemplate" name="selectdevicetemplate" class="form-control"></select>
+	    </div>
+	    
+	    <!-- Device list of a template -->
+	    <div id="templatedevicelist">
+	    	<div class="form-group">
+	    		<select id="selectdevice" name="selectdevice" class="form-control"></select>
+	    	</div>
+	    </div>
+	    
+	    <!-- Device Channels Data Chart -->
+	    <div id="channelslbl" class="panel panel-primary">
+	    	<div class="panel-heading">
+	    		<label for="channelslbl"></label>
+	    	</div>
+	    </div>
+		<div class="panel-group" id="channels" role="tablSist" aria-multiselectable="true">
+			
+		</div>
+	
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button id="logout" type="button" class="btn btn-primary" data-dismiss="modal">Logout</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF XIVELY SCREEN -->
+
+<!-- Include JQuery library from CDN -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<!-- CopnvasJS charts -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- CopnvasJS charts -->
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<script type="text/javascript" src="resource/config.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "xively_account_devices",
+  "version": "1.0.0",
+  "description": "List all device templates, devices and the relevant data from an xively account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamacho68/xively_account_devices_info.git"
+  },
+  "keywords": [
+    "xively",
+    "devices",
+    "time",
+    "series"
+  ],
+  "author": "Kamel Aouidef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamacho68/xively_account_devices/issues"
+  },
+  "homepage": "https://github.com/Kamacho68/xively_account_devices#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
