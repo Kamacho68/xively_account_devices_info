@@ -20,7 +20,6 @@ function clearSession() {
 }
 
 
-
 const xi_id_url = "https://id.xively.eu/api/v1/auth/login-user";
 const xi_bp_url = "https://blueprint.xively.eu/api/v1/";
 const xi_ts_url = "https://timeseries.xively.eu/api/v4/data/xi/blue/v1/";
@@ -303,11 +302,11 @@ function get_device_channels_data(device_id, channel_name) {
 			axisX : {
 				labelAngle : 30,
 				//valueFormatString : "DD/MM/YY hh:mm:ss", // valueFormatString : "DD/MM/YY hh:mm:ssz"
-				title: "" // Reading number
+				title: "Reading number" // Reading number
 			},
 			axisY : {
 				includeZero : true,
-				title: "" // i.e. Â°C
+				title: channel_name_capitalised + " readings" // i.e. Â°C
 			},
 			data : chartData
 		});
