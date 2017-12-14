@@ -25,23 +25,12 @@ if (userCredentials.enabled) {
 	document.getElementById("accountId").defaultValue = userCredentials.userXivelyAccountId;
 }
 
-/* START OF TO DELETE AFTER TESTING */
-/*setDefaultValues();
-
-function setDefaultValues() {
-	document.getElementById("email").defaultValue = "mbrunner@logmein.com";
-	document.getElementById("password").defaultValue = "t5zYeH!bqBe!%M9x";
-	document.getElementById("accountId").defaultValue = "dc92460c-544d-4f29-aba0-98c8bea362e4";
-}*/
-/* END OF TO DELETE AFTER TESTING */
-
-
- const xi_id_url = "https://id.xively.eu/api/v1/auth/login-user";
- const xi_bp_url = "https://blueprint.xively.eu/api/v1/";
- const xi_ts_url = "https://timeseries.xively.eu/api/v4/data/xi/blue/v1/";
+const xi_id_url = "https://id.xively.eu/api/v1/auth/login-user";
+const xi_bp_url = "https://blueprint.xively.eu/api/v1/";
+const xi_ts_url = "https://timeseries.xively.eu/api/v4/data/xi/blue/v1/";
 
  // Create a base class
- function user_account_data() {
+function user_account_data() {
  	emailAddress = "";
  	password = "";
  	accountId = "";
@@ -54,7 +43,7 @@ function setDefaultValues() {
  	selectedDeviceData: [];
  	selectedChannel: null;
  	selectedDeviceChannels: [];
- }
+}
 
  // Create sub-class and extend UserProperties class.
  user_related_data.prototype = new user_account_data();
