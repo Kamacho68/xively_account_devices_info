@@ -19,11 +19,7 @@ function clearSession() {
 	$("#channels").empty();
 }
 
-if (userCredentials.enabled) {
-	document.getElementById("email").defaultValue = userCredentials.username;
-	document.getElementById("password").defaultValue = userCredentials.userPassword;
-	document.getElementById("accountId").defaultValue = userCredentials.userXivelyAccountId;
-}
+
 
 const xi_id_url = "https://id.xively.eu/api/v1/auth/login-user";
 const xi_bp_url = "https://blueprint.xively.eu/api/v1/";
