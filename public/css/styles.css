@@ -93,4 +93,8 @@
 
 .login-help{
   font-size: 12px;
-} 
+}
+
+#device_templates {
+	overflow: scroll !important;
+}
